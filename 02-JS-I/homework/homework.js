@@ -4,7 +4,7 @@
 const nuevaString = "Lobo";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = "1101";
+const nuevoNum = 11;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -146,13 +146,13 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round(num)
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.cell(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -166,14 +166,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero === 0){
+  if (numero === 0) {
     return false;
   }
   else if (numero > 0 ) {
-    return "es positivo";
+    return "Es positivo";
   }
   else {
-    return "es negativo";
+    return "Es negativo";
   }
 }
 
@@ -182,24 +182,21 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
   return str + '!';
-
 }
-
-
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinar = nombre + '' + apellido;
-  return combinar;
+  var combinado = nombre + ' ' + apellido;
+  return combinado;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola' + nombre + '!';
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -230,7 +227,6 @@ function deEuroAdolar(euro){
   return euro * 1.2
 }
 
-
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle 
@@ -238,12 +234,13 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length > 1){
-    return "dato incorrecto"
+    return "Dato incorrecto";
   }
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-    return "es vocal"
+    return "Es vocal";
   }
-  return "dato incorrecto"
+  return "Dato incorrecto"
+
 }
 
 
